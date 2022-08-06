@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    width: 100%;
+}
+
+.nav_left li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 25px 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.nav_left li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_left li:hover{
+    background-color: #059862;
+    color: white;
+}   
+
+.nav_right li{
+    position: relative;
+    top: 40px;
+    display: inline;
+    list-style-type: none;
+    width: 130px;
+    overflow-wrap: normal;
+}
+
+.nav_right li a{
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+
+.new{
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin-left: 7px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px solid black;
+    position: relative;
+    top: -2px;
+    background-color: white;
+}
+
+#pro{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+#getcertified{
+    background-color: #FFC0C7;
+    color: black;
+    border: #FFC0C7;
+    padding: 12px 20px;
+}
+
+#website{
+    border: white;
+    color: black;
+    padding: 12px 20px;
+}
+
+#login{
+    color: white;
+    background-color: #059862;
+    border: #059862;
+    padding: 12px 20px;
+
+}
+
+.nav_right li a:hover{
+    color: white !important;
+    background-color: #059862 !important;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #0cdf92 !important;
+}
+
+.belowpagetop{
+    z-index: 4;
+    position: sticky;
+    top: 0;
+}
+
+.belowpagetop::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu_left{
+    width: 100%;
+    background-color: #282A35;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    z-index: 2;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+.menu_left li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu_left li a{
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_left li a:hover{
+    background-color: black;
+}
+
+.side_menu{
+    height: 100%;
+    width: 20%;
+    background-color: #E7E9EB;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.side_menu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.side_menu a:hover{
+    background-color: #cccccc;
+}
+
+.ref_overview{
+    display: none;
+}
+
+
+.sql_keyworks a:hover .ref_overview{
+    display: block;
+}
+
+.main_content{
+    width: 80%;
+    float: right;
+    font-family: "Segoe UI" ,Arial, sans-serif;
+}
+
+:root{
+    --main_color: #04AA6D;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: var(--main_color);
+    color: white;
+    font-size: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #059862;
+}
+
+.btn_home{
+    margin-left: 15px;
+
+}
+
+.btn_next{
+    float: right !important;
+    margin-right: 15px;
+}
+
+.sql_intro{
+    background-color: #D9EEE1;
+    padding: 52px;
+    margin: 24px;
+    
+}
+
+.example{
+    padding: 8px 20px;
+    margin: 20px 40px;
+    background-color: #E7E9EB;
+    border-radius: 5px;
+}
+
+.example_box{
+    border-left: 4px solid #04AA6D;
+    width:auto;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    display: block;
+    background-color: #282A35;
+    padding: 20px;
+    margin: 32px;
+    border-radius: 5px;
+}
+
+.dropdown_sql_keywords{
+    position: relative;
+    display: block;
+}
+
+.dropdown_content_sql_keywords{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: #cccccc;
+}
+
+.dropdown_sql_keywords:hover .dropdown_content_sql_keywords{
+    display: block;
+}
